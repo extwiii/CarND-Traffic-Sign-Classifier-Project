@@ -150,15 +150,19 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 All images, and their probabilities;
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.00         			| Stop   									| 
-| 1.00     				| No entry 										|
-| 1.00					| General caution												|
-| 1.00	      			| 30 km/h						 				|
-| 1.00				    | Ahead only      							|
+| 1.00      		| Stop   									| 
+|  1.00     			| No entry 										|
+|  1.00					| General caution											|
+|  1.00	      		| 30 km/h				 				|
+|  1.00			| Ahead only     							|
 
- 
+ ### Rating :full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon:
+### Difficulty :full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon::full_moon:
+
+### Bilal Cagiran | [E-Mail](mailto:bcagiran@hotmail.com) | [Github](https://github.com/extwiii/) | [LinkedIn](https://linkedin.com/in/bilalcagiran) | [CodePen](http://codepen.io/extwiii/) | [Blog/Site](http://bilalcagiran.com) | [FreeCodeCamp](https://www.freecodecamp.com/extwiii)
 
 
 
