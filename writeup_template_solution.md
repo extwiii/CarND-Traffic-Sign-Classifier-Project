@@ -62,7 +62,7 @@ I added an exploratory visualization of the data set inside the code. Please see
 
 As a first step, I decided to convert the images to grayscale because one dimensional model better and easier than three dimensional RGB color pictures.
 
-Here is an example of a traffic sign image before and after grayscaling.[project code](https://github.com/extwiii/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+Here is an example of a traffic sign image before and after grayscaling. Please see [project code](https://github.com/extwiii/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
 
 As a last step, I normalized the image data because it makes every value between 0 and 1
@@ -97,31 +97,40 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an tf.train.AdamOptimizer and my metrics were like below;
-EPOCHS = 30
-BATCH_SIZE = 300
-mu = 0
-sigma = 0.1
-rate = 0.008
+-To train the model, I used an tf.train.AdamOptimizer and my metrics were like below;
+* EPOCHS = 30
+* BATCH_SIZE = 300
+* mu = 0
+* sigma = 0.1
+* rate = 0.008
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 0.99008593095
+* validation set accuracy of 0.916468735121
+* test set accuracy of 0.942176879263
+
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+I simply used LeNet architecture and the reason I picked because during the CNN class we implemented same architecture, so easy to implement.
 * What were some problems with the initial architecture?
+Different dimensions
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+I kept layers as it is just changed epochs and batch size to see differences
 * Which parameters were tuned? How were they adjusted and why?
+I also changed Learning Rate
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+CNN works because we are using images, if we use text we would use completely different model.
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+LeNet
 * Why did you believe it would be relevant to the traffic sign application?
+We used same architecture for hand-written digits
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
+I passed the minimum level :) Over 90% for all level.
  
 
 ### Test a Model on New Images
